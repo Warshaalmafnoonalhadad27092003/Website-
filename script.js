@@ -321,3 +321,18 @@ document.body.appendChild(whatsapp);
 // =========================
 
 console.log("Al Funoon Steel Works Website Loaded Successfully");
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+
+        loader.classList.add("hidden");
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 600);
+
+    }
+
+});
