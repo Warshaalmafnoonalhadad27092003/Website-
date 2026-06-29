@@ -335,4 +335,27 @@ window.addEventListener("load", () => {
 
     }
 
-});
+});/* ===== LOADER FIX FINAL ===== */
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: all 0.5s ease;
+}
+
+/* hide state */
+#loader.hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}/* ===== LOADER FIX FINAL ===== */
+: none;
+}
