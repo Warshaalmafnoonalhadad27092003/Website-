@@ -859,3 +859,20 @@ body{
     opacity: 0;
     visibility: hidden;
 }
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+
+        loader.classList.add("hidden");
+
+        setTimeout(() => {
+
+            loader.remove(); // fully remove (BEST FIX)
+
+        }, 600);
+
+    }
+
+});
