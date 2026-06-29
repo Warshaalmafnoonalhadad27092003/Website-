@@ -26,3 +26,38 @@ Professional welding workshop website for Al Mafnoon Welding Workshop in Al Nama
     <p>Best quality welding work at affordable price</p>
     <button class="btn">Contact Us</button>
   </section>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+      <h3>MIG Welding</h3>
+      <p>High quality MIG welding work</p>
+    </div>
+
+    <div class="service-box">
+      <h3>TIG Welding</h3>
+      <p>Precision TIG welding services</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Arc Welding</h3>
+      <p>Strong and durable arc welding</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +966 XXX XXX XXX</p>
+    <p>Email: info@weldingpro.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Welding Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
