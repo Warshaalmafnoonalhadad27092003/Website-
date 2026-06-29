@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* Header */
+header {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff6600;
+}
+
+header h1 {
+  color: #ff6600;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url("https://images.unsplash.com/photo-1581091870622-3c5b7c2f2b0f") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff6600;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Services */
+.services {
+  padding: 50px;
+  text-align: center;
+}
+
+.service-box {
+  display: inline-block;
+  background: #1a1a1a;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ff6600;
+}
+
+/* Contact */
+#contact {
+  padding: 40px;
+  text-align: center;
+  background: #111;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  border-top: 2px solid #ff6600;
+}
