@@ -448,6 +448,32 @@ section h2::after{
 
 .services .card i{
     font-size:42px;
+    
+    color:var(--primary);
+    margin-bottom:18px;
+}
+
+.services .card h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.services .card p{
+    color:#d0d0d0;
+    font-size:15px;
+    line-height:1.8;
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
     color:var(--/*=========================================
  AL FUNOON STEEL WORKS
  STYLE.CSS PART 3
@@ -660,7 +686,8 @@ footer strong{
 
 #topBtn:hover{
     background:#fff;
-    color:#111;/*=========================================
+    color:#111;
+}
  AL FUNOON STEEL WORKS
  STYLE.CSS PART 4 (FINAL)
  Responsive • Effects • Utilities
