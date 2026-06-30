@@ -1,0 +1,319 @@
+/* =========================================
+   AL FUNOON STEEL WORKS
+   STYLE.CSS (PRO VERSION)
+=========================================*/
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* VARIABLES */
+:root{
+    --primary:#d62828;
+    --dark:#0a0a0a;
+    --bg:#0f0f0f;
+    --card:#1c1c1c;
+    --text:#ffffff;
+    --gray:#bdbdbd;
+    --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* BODY */
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* LINKS */
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* IMAGES */
+img{
+    max-width:100%;
+    display:block;
+    transition:.4s ease;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+    padding:90px 8%;
+}
+
+/* ================= LOADER ================= */
+#loader{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loader-circle{
+    width:70px;
+    height:70px;
+    border:6px solid #333;
+    border-top:6px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+#loader.hidden{
+    opacity:0;
+    visibility:hidden;
+}
+
+/* ================= HEADER ================= */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(12px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:999;
+}
+
+.logo h1{
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo span{
+    color:var(--primary);
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    font-size:15px;
+    position:relative;
+    transition:.3s;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:var(--primary);
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:var(--primary);
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* ================= HERO ================= */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+        url("images/workshop.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    animation:fadeUp 1s ease;
+}
+
+.hero h2{
+    font-size:55px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:18px;
+    margin-top:15px;
+    color:#ddd;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:30px;
+    margin-top:20px;
+    transition:.3s;
+    box-shadow:var(--shadow);
+}
+
+.btn:hover{
+    background:#fff;
+    color:#000;
+    transform:translateY(-5px);
+}
+
+/* ================= CARDS ================= */
+.card,
+.feature-box,
+.slide{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    transition:.4s;
+    box-shadow:var(--shadow);
+}
+
+.card:hover,
+.feature-box:hover,
+.slide:hover{
+    transform:translateY(-10px);
+    border:1px solid var(--primary);
+}
+
+/* ================= GRID SECTIONS ================= */
+.services,
+.statistics,
+.quick-contact,
+.slider{
+    display:grid;
+    gap:20px;
+}
+
+/* ================= CONTACT ================= */
+.contact-form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:#fff;
+}
+
+.contact-form button{
+    padding:12px 25px;
+    background:var(--primary);
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    border-top:2px solid var(--primary);
+}
+
+/* ================= WHATSAPP ================= */
+#whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    z-index:999;
+}
+
+/* ================= BACK TO TOP ================= */
+#topBtn{
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    width:45px;
+    height:45px;
+    background:var(--primary);
+    border:none;
+    border-radius:50%;
+    display:none;
+    cursor:pointer;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+
+.hero h2{
+    font-size:32px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:10px;
+}
+
+section{
+    padding:60px 5%;
+}
+
+}
